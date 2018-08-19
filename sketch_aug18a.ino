@@ -30,29 +30,6 @@ void calc(){
     double delta = millis() - ms;
     double factor = delta/3600000;
     dist_in_km += factor*fix.speed_kph();
-    //dist_in_km += 1;
-
-    Serial.print("millis: ");
-    Serial.print(millis());
-    Serial.print("\n");
-
-    Serial.print("ms: ");
-    Serial.print(ms);
-    Serial.print("\n");
-    
-    Serial.print("delta: ");
-    Serial.print(delta);
-    Serial.print("\n");
-
-    Serial.print("factor: ");
-    Serial.print(factor);
-    Serial.print("\n");
-  
-    Serial.print(dist_in_km);
-    Serial.print("\n");
-    
-    Serial.print(delta);
-    Serial.print("\n");
   }
   ms = millis();
 }
